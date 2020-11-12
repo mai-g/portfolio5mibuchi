@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title>5mibuchi portfolio</title>
+       <link href="https://unpkg.com/ress@3.0.0/dist/ress.min.css" rel="stylesheet">
+       <link href="portfolio.css" rel="stylesheet">
+       <link href="images/favicon.png" rel="icon" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+  // SmoothScroll
+  $('a[href^="#"]').click(function(){
+    var target = $( $(this).attr('href') ).offset().top;
+    $('html,body').animate({ scrollTop: target }, 1000);
+    return false;
+  });
+});
+</script>
+   </head>
+   <body>
+       <div class="wrapper">
+        <header id="header">
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="#work-container">works</a></li>
+                    <li><a href="extra.html">extra</a></li>
+                    <!--<li><a href="contact.html">contact</a></li>-->
+                 </ul>
+            </nav>
+           <a href="index.html"><img src="images/name-logo.svg" alt="gomibuchiウェブサイトロゴ" class="logo"></a>
+        </header>
+        <section> 
+            <h2 class="main-title">works</h2>
+            <div id="work-container">
+                <div>
+                    <a href="subpage-green.html"><img src="images/green.jpg" alt="greenparkウェブページ" class="website-thumb"></a>
+                    <p>架空サイト</p>
+                    <p>『GREEN PARK』ECサイト</p>    
+                </div>
+                <div class="mogu">
+                    <a href="subpage-mogu.html"><img src="images/mogu-website.svg" alt="モグローカルウェブページ" class="website-thumb"></a>
+                    <p>栃木県日光市ローカルメディア</p>
+                    <p>『モグローカル』LPページ、ロゴデザイン</p>
+                 </div>
+                 <div class="being">
+                     <a href="subpage-being.html"><img src="images/being-website.jpg" alt="beingウェブページ"></a>
+                     <p>架空サイト</p>
+                     <p>住宅ブランド『being』ロゴデザイン、LPページ</p>    
+                 </div>
+                 <div>
+                    <a href="subpage-firstview.html"><img src="images/savor.jpg" alt="ファーストビュー" class="website-thumb"></a>
+                    <p>架空サイト</p>
+                    <p>ファーストビュー</p>    
+                </div>
+                 <div>
+                    <a href="subpage-groupwork.html"><img src="images/group-thumb.jpg" alt="モンスリールウェブページ" class="website-thumb"></a>
+                    <p>グループ制作課題</p>
+                    <p>mon sourire 架空ウェブサイト</p>
+                 </div>
+                 <div class="soramado-coffee">
+                     <a href="subpage-soramado-coffee.html"><img src="images/soramado-coffee-logo.jpg" alt="ソラマドコーヒーロゴ"></a>
+                     <p>デザイン注文住宅</p>
+                     <p>soramado saitamaオリジナルコーヒー企画</p>
+                 </div>
+                 <div>
+                     <a href="subpage-soramado-dm.html"><img src="images/dm.jpg" alt="ソラマドDM"></a>
+                     <p>デザイン注文住宅</p>    
+                     <p>soramado saitama 顧客向けDMデザイン</p>
+                 </div>
+                 <div>
+                    <a href="subpage-nojima.html"><img src="images/nojima-logo.jpg" alt="野島整形外科内科ロゴ"></a>
+                    <p>クラウドワークス案件</p>
+                    <p>野島整形外科内科ロゴデザイン</p>
+                 </div>
+                 <div>
+                    <a href="subpage-kandk.html"><img src="images/kandk-logo.jpg" alt="K＆Kfactoryロゴ"></a>
+                    <p>クラウドワークス案件</p>
+                    <p>Ｋ＆Ｋファームロゴデザイン</p>
+                 </div>
+                 <div>
+                    <a href="subpage-bone.html"><img src="images/bharat-insta.jpg" alt="シーシャバーロゴ"></a>
+                    <p>シーシャバー</p>
+                    <p>BHARAT、BONEグラフィックデザイン</p>
+                 </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="main-title">extra</h2>
+            <a href="extra.html">
+                <div class="papa-container">
+                    <div class="baby-container-1">
+                        <img src="images/photo1.jpg" alt="トルコの女の子" class="pic">
+                        <img src="images/photo2.jpg" alt="キューバの青年たち" class="pic">
+                        <img src="images/photo4.jpg" alt="キューバの床屋" class="pic">
+                        <img src="images/photo5.jpg" alt="キューバの男の子たち" class="pic">
+                    </div>
+                    <div class="baby-container-2"> <img src="images/photo3.jpg" alt="キューバの景色"></div>
+              </div>
+            </a>
+        </section>
+        <footer>
+                <a href="#header" class="jump">
+                    <img src="images/jump.svg" alt="トップに戻る">
+                </a>
+            <nav>
+                <ul class="sub-nav">
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="#work-container">works</a></li>
+                    <li><a href="extra.html">extra</a></li>
+                    <!--<li><a href="contact.html">contact</a></li>-->
+                </ul>
+            </nav>
+            <p class="copyright"><small>Copyright &#169; MAI GOMIBUCHI All rights reserved.</small></p>
+        </footer>
+       </div>
+    </body>
+</html>

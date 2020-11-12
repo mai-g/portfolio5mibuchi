@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title>5mibuchi portfolio</title>
+       <link href="https://unpkg.com/ress@3.0.0/dist/ress.min.css" rel="stylesheet">
+       <link href="portfolio.css" rel="stylesheet">
+       <link href="images/favicon.png" rel="icon" type="image/png">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script>
+        $(function(){
+          // SmoothScroll
+          $('a[href^="#"]').click(function(){
+            var target = $( $(this).attr('href') ).offset().top;
+            $('html,body').animate({ scrollTop: target }, 1000);
+            return false;
+          });
+        });
+        </script>
+   </head>
+   <body>
+       <div class="wrapper">
+        <header id="header">
+            <a href="index.html"> <img src="images/name-logo.svg" alt="gomibuchiウェブサイトロゴ" class="sub-logo"></a>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="index.html#work-container">works</a></li>
+                    <li><a href="extra.html">extra</a></li>
+                    <!--<li><a href="contact.html">contact</a></li>-->
+                 </ul>
+            </nav>
+        </header>
+
+        <main>
+            <img src="images/nojima-logo.svg" alt=野島整形外科内科ロゴ class="subpage-logo">
+            <article class="article-about">
+                <h1>野島整形外科内科ロゴデザイン</h1>
+                <p>クラウドワークス案件応募作品。クライアントお気に入り獲得。（181作品中上位15件）清瀬市松山に所在する整形外科内科のロゴ。「幅広い年齢層に親しみを感じてもらえるデザイン」という要望から、有機物を模したデザインに至った。
+               </p>
+               <div class="info">
+                <p>使用ツール: Illustrator, Photoshop</p>
+                <p>担当: ロゴデザイン</p>
+               </div>
+            </article>
+        </main>
+        <a href="#detail" class="jump"><img src="images/jump-down.svg" alt="トップに戻る"></a>
+        <h2 class="content-title">関連作品</h2>
+        <section id="detail" class="relative">
+            <img src="images/nojima-banner.jpg" alt="野島整形外科内科バナー" class="card">
+            <article class="article-about">
+                <h1>バナーデザイン A案</h1>
+                <p>クライアントの要望である「親しみやすさ」を表現するため、笑顔の患者と寄り添う看護師の写真を全面に使用した。</p>
+               <div class="info">
+                <p>使用ツール: Illustrator、photoshop</p>
+                <p>制作時間：２時間</p>
+               </div>
+            </article>
+        </section>
+        <section class="relative">
+            <img src="images/nojima-banner2.jpg" alt="野島整形外科内科バナー" class="card">
+            <article class="article-about">
+                <h1>バナーデザイン B案</h1>
+                <p>A案に対し、営業時間や地図を追加することでより通院イメージを持たせ、コンバージョン獲得を狙った。</p>
+                <div class="info">
+                <p>使用ツール: Illustrator、photoshop</p>
+                <p>制作時間：3時間</p>
+               </div>
+            </article>
+        </section>
+        <footer>
+            <nav>
+                <ul class="sub-nav">
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="index.html#work-container">works</a></li>
+                    <li><a href="extra.html">extra</a></li>
+                    <!--<li><a href="contact.html">contact</a></li>-->
+                 </ul>
+    
+            </nav>
+        </footer>
+       </div>
+    </body>
+</html>

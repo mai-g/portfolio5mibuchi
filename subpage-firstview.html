@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title>5mibuchi portfolio</title>
+       <link href="https://unpkg.com/ress@3.0.0/dist/ress.min.css" rel="stylesheet">
+       <link href="portfolio.css" rel="stylesheet">
+       <link href="images/favicon.png" rel="icon" type="image/png">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script>
+        $(function(){
+          // SmoothScroll
+          $('a[href^="#"]').click(function(){
+            var target = $( $(this).attr('href') ).offset().top;
+            $('html,body').animate({ scrollTop: target }, 1000);
+            return false;
+          });
+        });
+        </script>
+        
+   </head>
+   <body>
+       <div class="wrapper">
+        <header id="header">
+            <a href="index.html"> <img src="images/name-logo.svg" alt="gomibuchiウェブサイトロゴ" class="sub-logo"></a>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="index.html#work-container">works</a></li>
+                    <li><a href="extra.html">extra</a></li>
+                    <!--<li><a href="contact.html">contact</a></li>-->
+                 </ul>
+            </nav>
+        </header>
+        <main>
+            <img src="images/savor.jpg" alt="savorファーストビュー" class="website-thumb"></a>
+            <article class="article-about">
+                <p>架空サイト　ファーストビュー</p>
+                <h1>beauty salon「savor」</h1>
+                <p>20代後半からの女性の美肌をサポートする美容サロン。特に美白肌を目指す女性をターゲットとしている。そのため、透明感を出すために全体的に白を基調としているが、背景に石のテクスチャーを足すことで立体感を出している。
+                </p>
+               <div class="info">
+                <p>使用ツール: AdobeXD</p>
+                <p>制作期間:　2.5時間</p>
+               </div>
+            </article>
+        </main>
+        <a href="#detail" class="jump"><img src="images/jump-down.svg" alt="トップに戻る"></a>
+        <h2 class="content-title">関連作品</h2>
+        <section id="detail" class="relative">
+            <img src="images/roi.jpg" alt="カメラ屋ファーストビュー" class="website-thumb">
+            <article class="article-about">
+                <p>架空サイト　ファーストビュー</p>
+                <h1>中古カメラ屋「Roi Rollei」</h1>
+                <p>海外製の中古カメラを主に取り扱うカメラ屋さん。オーナーがドイツカメラメーカーのローライをこよなく愛しており、ドイツのシックなデザインに仕上げました。</p>
+               <div class="info">
+                <p>使用ツール: AdobeXD, Illustrator</p>
+                <p>制作期間:　2時間</p>
+               </div>
+            </article>
+        </section>
+       <!-- <section class="relative">
+            <img src="images/mogu-card.svg" alt="モグローカル名刺" class="card">
+            <article class="article-about">
+                <h1>モグローカル名刺</h1>
+                <p>オリジナルロゴを使用した名刺を作成。曲線を使用し、モグラの穴ぐらをイメージしてデザインした。</p>
+               <div class="info">
+                <p>使用ツール: Illustrator</p>
+                <p>制作時間：2時間</p>
+               </div>
+            </article>
+        </section>-->
+
+        <footer>
+            <nav>
+                <ul class="sub-nav">
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="index.html#work-container">works</a></li>
+                    <li><a href="extra.html">extra</a></li>
+                 </ul>
+            </nav>
+        </footer>
+       </div>
+    </body>
+</html>

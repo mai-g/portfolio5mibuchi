@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+/*共通項目ここから*/
+
+.wrapper{
+    padding: 50px 0px;
+    width: 1100px;
+    margin: 0 auto;
+    color: #414042;
+    font-family: serif;
+}
+
+
+li {
+    padding-left: 80px;
+}
+
+li:hover {
+    opacity: 0.5;
+}
+
+
+ .main-title {
+    font-size: 40px;
+    text-align: center;
+    padding: 150px 0px;
+}
+
+
+/*ナビゲーションここから*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    justify-content: flex-end;
+}
+
+/*ナビゲーションここまで*/
+
+/*footerここから*/
+
+.jump {
+    width: 50px;
+   height: 50px;
+   display: block;
+   text-align: center;
+   margin: 100px auto 0 auto;
+}
+
+.jump:hover {
+    opacity: 0.5;
+}
+
+
+.jump img{
+    width: 100%;
+}
+
+
+
+.sub-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    padding-top: 100px;
+}
+
+.copyright {
+    padding-top: 50px;
+    text-align: center;
+    color: gray;
+}
+
+
+
+.logo {
+    padding: 200px 0px;
+    width: 40vw;
+
+}
+
+/*------共通項目ここまで---------------*/
+
+/*--- --topページ--------------------*/
+
+/*workここから*/
+#work-container {
+   text-align: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 150px 0px;
+   align-items: flex-end;
+}
+
+.website-thumb {
+    width: 400px;
+    height: 261px;
+}
+
+.website-thumb:hover, #work-container img:hover {
+        opacity: 0.5;
+        transition: all 0.5s;
+}
+
+
+/*extraここから*/
+
+
+
+.papa-container {
+    display: flex;
+    width: 885px;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.pic {
+    margin: 0px 30px 10px 0px;
+    opacity: 0.7;
+
+}
+
+.baby-container-2 {
+    margin: 0px 0 10px 0px;
+    opacity: 0.7;
+}
+
+.pic:hover {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.baby-container-2:hover {
+   opacity: 1;
+       transition: all 1s;
+
+}
+
+/*extraここまで*/
+
+/*------------ここから各ページ---------------------*/
+/*共通項目*/
+
+.sub-logo {
+    width: 300px;
+}
+
+.relative, main {
+    justify-content: space-around;
+    display: flex;
+    padding: 100px 80px;
+    align-items: flex-end;
+}
+
+.article-about {
+    margin: 100px 0px 0px 100px;
+    width: 350px;
+}
+.article-about h1 {
+    padding-bottom: 20px; 
+}
+
+
+.content-title {
+    text-align: center;
+    padding-top: 150px; 
+ 
+}
+
+/*------about meページ---------------*/
+
+
+.info {
+    margin-top:20px;
+}
+
+.face {
+    width: 35%;
+}
+
+/*-------extraページ---------------*/
+
+.eye {
+    width: 40vw; 
+    height: auto; 
+}
+
+.extra-title {
+    padding: 50px 0 0 50px;
+    font-size: 30px;
+}
+
+.item {
+    width: 20vw;
+}
+
+.photo-box { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+/*-------contactページ---------*/
+
+textarea, input {
+ border: 1px #454545 solid;
+ opacity:0.5px ;
+ width: 50%
+}
+
+/*-------workページ---------------*/
+/*--共通項目-*/
+
+.subpage-logo {
+    display: inline-block;
+    width: 35%;
+    margin: 0 70px;
+}
+
+/*--mogu-local--*/
+/*ロゴデータサイズはW300で統一.オブジェクトの配置はw１０ミリ開けて配置*/
+
+.mogu-logo {
+    width: 35%;
+}
+
+.card {
+    width:45%;
+}
+
+
+/*--group--*/
+
+.group-logo {
+    width:20%;
+}
+

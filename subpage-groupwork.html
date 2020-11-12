@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title>5mibuchi portfolio</title>
+       <link href="https://unpkg.com/ress@3.0.0/dist/ress.min.css" rel="stylesheet">
+       <link href="portfolio.css" rel="stylesheet">
+       <link href="images/favicon.png" rel="icon" type="image/png">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script>
+        $(function(){
+          // SmoothScroll
+          $('a[href^="#"]').click(function(){
+            var target = $( $(this).attr('href') ).offset().top;
+            $('html,body').animate({ scrollTop: target }, 1000);
+            return false;
+          });
+        });
+        </script>
+        
+   </head>
+   <body>
+       <div class="wrapper">
+        <header id="header">
+            <a href="index.html"> <img src="images/name-logo.svg" alt="gomibuchiウェブサイトロゴ" class="sub-logo"></a>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="index.html#work-container">works</a></li>
+                    <li><a href="extra.html">extra</a></li>
+                    <!--<li><a href="contact.html">contact</a></li>-->
+                 </ul>
+            </nav>
+        </header>
+
+        <main>
+            <a href="https://humankikuya.xsrv.jp/ha2006/013/group/group.html"><img src="images/group-thumb.jpg" alt="モンスリールウェブページ" class="website-thumb"></a>
+            <article class="article-about">
+                <p>グループ制作</p>
+                <h1>mon sourire 架空ウェブサイト</h1>
+                <p>グループ制作課題。丸の内のオフィス街にあるワインバーという設定でウェブサイトを作成した。主にディレクションを担当した。ディレクター業務では、コンセプトやクオリティー管理、スケジュール管理、タスク管理を行なった。一部コーディング、デザインも行っている。
+               </p>
+               <div class="info">
+                <p>期間:１週間</p>
+                <p>チーム人数：５名</p>
+                <p>担当:ディレクション、ロゴデザイン</p>
+               </div>
+            </article>
+        </main>
+        <a href="#detail" class="jump"><img src="images/jump-down.svg" alt="トップに戻る"></a>
+        <h2 class="content-title">関連作品</h2>
+        <section id="detail" class="relative">
+            <img src="images/topicon.svg" alt="モンスリールロゴ" class="group-logo">
+            <article class="article-about">
+                <h1>オリジナルロゴ</h1>
+                <p>ワインバーという事が一目でわかるようにワイングラスをモチーフに作成した。店名の「Mon Sourire」はフランス語で「笑顔」という意味の為、グラスの中のワインが笑顔に見えるようになっている。またワイングラスの上に浮かぶ複数の円は、ぶどうの形になっており、香り高いワインを扱っている店という意味を込めている。</p>
+               <div class="info">
+                <p>使用場所: webページ、SNS、名刺</p>
+                <p>使用ツール: Illustrator</p>
+                <p>制作期間:　3時間</p>
+               </div>
+            </article>
+        </section>
+        <footer>
+            <nav>
+                <ul class="sub-nav">
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="index.html#work-container">works</a></li>
+                    <li><a href="extra.html">extra</a></li>
+                    <!--<li><a href="contact.html">contact</a></li>-->
+                 </ul>
+    
+            </nav>
+        </footer>
+       </div>
+    </body>
+</html>

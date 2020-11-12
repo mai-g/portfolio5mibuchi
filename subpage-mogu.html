@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title>5mibuchi portfolio</title>
+       <link href="https://unpkg.com/ress@3.0.0/dist/ress.min.css" rel="stylesheet">
+       <link href="portfolio.css" rel="stylesheet">
+       <link href="images/favicon.png" rel="icon" type="image/png">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script>
+        $(function(){
+          // SmoothScroll
+          $('a[href^="#"]').click(function(){
+            var target = $( $(this).attr('href') ).offset().top;
+            $('html,body').animate({ scrollTop: target }, 1000);
+            return false;
+          });
+        });
+        </script>
+        
+   </head>
+   <body>
+       <div class="wrapper">
+        <header id="header">
+            <a href="index.html"> <img src="images/name-logo.svg" alt="gomibuchiウェブサイトロゴ" class="sub-logo"></a>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="index.html#work-container">works</a></li>
+                    <li><a href="extra.html">extra</a></li>
+                    <!--<li><a href="contact.html">contact</a></li>-->
+                 </ul>
+            </nav>
+        </header>
+
+        <main>
+            <a href="https://humankikuya.xsrv.jp/ha2006/013/mogu-local/mogu.index.html"><img src="images/mogu-website.svg" alt="モグローカルウェブページ" class="website-thumb"></a>
+            <article class="article-about">
+                <p>栃木県日光市ローカルメディア</p>
+                <h1>モグローカル LPページ</h1>
+                <p>日光市の秘めた魅力を伝えるローカルメディア。地元出身の女性二人が、日光市の地域活性化のために立ち上げ、日光市に住む人々の暮らしを取材し宣伝活動を行っている。今回、ロゴデザイン、ランディングページ、名刺デザインを担当している。</p>
+               <div class="info">
+                <p>使用ツール: Illustrator, Photoshop, AdobeXD, Dreamweaver</p>
+                <p>制作期間:　３週間(実作業時間：25時間)</p>
+                <p>担当: ロゴおよびウェブデザイン、コーディング</p>
+               </div>
+            </article>
+        </main>
+        <a href="#detail" class="jump"><img src="images/jump-down.svg" alt="トップに戻る"></a>
+        <h2 class="content-title">関連作品</h2>
+        <section id="detail" class="relative">
+            <img src="images/mogu-logo.svg" alt="モグローカルロゴ" class="mogu-logo">
+            <article class="article-about">
+                <h1>オリジナルロゴ『もぐろー』</h1>
+                <p>「地域の魅力を掘り起こす」というキャッチコピーから「もぐら」をモチーフにしたロゴ制作を受注。地元企業、自治体との商談も想定されるためカジュアルすぎない多岐に渡って使用できるデザインにした。</p>
+               <div class="info">
+                <p>使用場所: webページ、SNS、名刺</p>
+                <p>使用ツール: Illustrator</p>
+                <p>制作期間:　1ヶ月(実作業時間：10時間)</p>
+               </div>
+            </article>
+        </section>
+       <!-- <section class="relative">
+            <img src="images/mogu-card.svg" alt="モグローカル名刺" class="card">
+            <article class="article-about">
+                <h1>モグローカル名刺</h1>
+                <p>オリジナルロゴを使用した名刺を作成。曲線を使用し、モグラの穴ぐらをイメージしてデザインした。</p>
+               <div class="info">
+                <p>使用ツール: Illustrator</p>
+                <p>制作時間：2時間</p>
+               </div>
+            </article>
+        </section>-->
+
+        <footer>
+            <nav>
+                <ul class="sub-nav">
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="index.html#work-container">works</a></li>
+                    <li><a href="extra.html">extra</a></li>
+                 </ul>
+            </nav>
+        </footer>
+       </div>
+    </body>
+</html>

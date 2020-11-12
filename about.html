@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+   <head>
+       <meta charset="UTF-8">
+       <title>5mibuchi portfolio</title>
+       <link href="https://unpkg.com/ress@3.0.0/dist/ress.min.css" rel="stylesheet">
+       <link href="portfolio.css" rel="stylesheet">
+       <link href="images/favicon.png" rel="icon" type="image/png">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script>
+        $(function(){
+          // SmoothScroll
+          $('a[href^="#"]').click(function(){
+            var target = $( $(this).attr('href') ).offset().top;
+            $('html,body').animate({ scrollTop: target }, 1000);
+            return false;
+          });
+        });
+        </script>
+   </head>
+   <body>
+       <div class="wrapper">
+        <header id="header">
+            <a href="index.html"> <img src="images/name-logo.svg" alt="gomibuchiウェブサイトロゴ" class="sub-logo"></a>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="index.html#work-container">works</a></li>
+                    <li><a href="extra.html">extra</a></li>
+                    <!--<li><a href="contact.html">contact</a></li>-->
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img src="images/portfoliopic.jpg" alt=ポートフォリオ顔写真 class="face">
+            <article class="article-about">
+                <h1>about me</h1>
+                <p>学生時代に国際情勢、異文化に関して学ぶ。
+                    <br>大学卒業後、古書店に勤める。そこで様々なデザインに触れ、デザインが人や社会にもたらす作用に興味を持ち、工務店に転職。DTPデザイン、インテリアコーディネーターを経験。現在、webページ制作などを行なっている。
+               </p>
+               <div class="info">
+                <p>使用ツール: Illustrator, Photoshop, AdobeXD, Dreamweaver, Visual Studio Code</p>
+               </div>
+            </article>
+        </main>
+        <!--<h2 class="content-title">more detail?</h2>
+        <a href="#detail" class="jump"><img src="images/jump-down.svg" alt="トップに戻る"></a>
+        <section class="relative">
+        <img src="images/about-more.jpg" alt="" id="detail">
+        </section>-->
+        <footer>
+            <nav>
+                <ul class="sub-nav">
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="index.html#work-container">works</a></li>
+                    <li><a href="extra.html">extra</a></li>
+                    <!--<li><a href="contact.html">contact</a></li>-->
+                </ul>
+    
+            </nav>
+        </footer>
+
+       </div>
+
+    </body>
+
+</html>
