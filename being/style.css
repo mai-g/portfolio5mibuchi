@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+/*ーーーーーーーー共通項目ーーーーーーーー*/
+body {
+    font-family: serif;
+}
+
+.logo {
+    z-index:10;
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    background-color: rgb(255,255,255,0.5);
+    top: 0;   
+    bottom: 0;                            /* 中央寄せ */
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*ー
+.layer {
+    z-index:10;
+    position: absolute;
+    background-image: url(images/layer.png);
+    top: 0;   
+    bottom: 0;                            /* 中央寄せ 
+    left: 0;
+    right: 0;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+}
+*/
+
+
+
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*ーーーーーーーー共通項目ここまでーーーーーーーー*/
+
+.box {
+    position: relative;
+    max-width: 100%;
+    height: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+.box .bgimg {
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-animation: anime 15s 0s infinite;
+    animation: anime 15s infinite;
+}
+
+.box .src1 {
+    background-image: url(images/eyecatch1.jpg);
+    background-size: cover;
+}
+ 
+.box .src2 {
+    background-image: url(images/eyecatch2.jpg);
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;  
+    background-size: cover;  
+}
+
+.box .src3 {
+    background-image: url(images/eyecatch3.jpg);
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    background-size: cover;
+}
+
+@keyframes anime {
+    0% {
+          opacity: 0;
+ }
+      8% {
+          opacity: 1;
+      }
+      17% {
+          opacity: 1;
+      }
+      50% {
+          opacity: 0;
+          transform: scale(1.2) ;
+           z-index:8;
+      }
+      100% { opacity: 0 }
+  }
+  
+
+/*ーーーーーーーーintroここからーーーーーーーー*/
+#intro {
+    width: 350px; 
+    margin: 150px auto;
+}
+.sub-logo {
+    margin-bottom: 50px;
+}
+
+/*ーーーーーーーーworksここからーーーーーーーー*/
+
+.pic {
+    width: 300px;
+    height: 200px;
+}
+
+#container1, #container2, #container3 {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    margin: 0 auto;
+} 
+
+#container2, #container3  {
+    padding-bottom: 150px;
+}
+
+#container1 {
+    padding-bottom: 50px;
+}
+
+
+#bgc {
+    background-color: #F2EFD1;
+}
+
+/*ここからcontainer3専用*/
+.item-right {
+    position: absolute;
+    right: 0px;
+    width: 350px;
+}
+
+#container3 {
+    align-items: flex-end;
+    position: relative;
+    margin: 0 auto;
+}
+
+.item-left {
+    position: absolute;
+    background-color: #fff;
+    border: 0.25px slategray solid;
+    left: 0px;
+    width: 300px;
+}
+
+.model-pic {
+    width: 50vw
+}
+
+/*ーーーーーーーーfooterここからーーーーーーーー*/
+
+.jump {
+    background-color: #000000;
+}
+
+.footer-logo {
+    height: 50px;
+
+}
+
+footer {
+    text-align: center;
+}
+
+small {
+    margin: 20px auto;
+}
+
+h2 {
+    padding: 100px;
+    font-size: 30px;
+}
