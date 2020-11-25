@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+
+main {
+    background-image: url(images/edited.mogu-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 3300px;
+}
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+
+/*first viewここから*/
+
+.logo {
+    width: 20vw;
+    margin: 0 auto;
+}
+
+footer, h1 {
+    width: 30vw;
+    margin: 0 auto;
+}   
+.first-view {
+    text-align: center;
+    height: 500px;
+}
+
+
+/*mainここから*/
+
+.content {
+    padding-top: 250px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.sansho {
+    padding-top: 400px;
+
+}
+
+
+.images {
+    width: 500px;
+}
+
+
+section {
+    padding: 0px 40px;
+    width: 400px;
+}
+
+
+
+
+/*ここからfooter*/
+
+footer{
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+ .sns {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 5vw;
+    margin: 30px;
+}
+
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: gray;
+    width: 150px;
+    border-radius: 30px;
+    padding: 10px 0;
+    margin: 70px;
+    border-style: none;
+    text-decoration: none;
+    box-shadow: 2px 2px rgb(185, 184, 184);
+}
+
+.btn:active {
+    color: #fff;
+    background-color: rgb(70, 69, 69);
+    box-shadow: none;
+    position: relative;
+    top: 2px;
+    left: 2px; 
+}
+
+.concept {
+    padding: 50px;
+    font-size:25px;
+}
+
+.content {
+    opacity : 0;
+    transition: all 3s;
+  }
