@@ -1,0 +1,379 @@
+@charset "utf-8";
+
+html{
+font-size:100%;
+color:#B5ABAB;
+}
+
+body{
+font-family:NSimSun;
+background:#430F28;
+}
+
+.wrapper{
+width:900px;
+margin-right:auto;
+margin-left:auto;
+}
+
+a{
+text-decoration:none;
+}
+
+img{
+max-width:100%;
+}
+
+.logo{
+display: inline-block;
+height: 200px;
+margin: 230px 0;
+}
+
+#news{
+background-image:url(images/eyecatch.jpg);
+min-height:85vh;
+background-size:cover;
+text-align: center;
+align-content: center; 
+
+}
+
+.main-nav{
+font-size:1.25rem;
+justify-content: center;
+text-transform:uppercase;
+list-style:none;
+margin: 0 auto;
+display: flex;
+}
+
+.main-nav li{
+margin-left:9px;
+}
+
+.main-nav a{
+font-size:1rem;
+font-weight:bold;
+letter-spacing:0.2rem;
+color:#fff;
+padding:0px 10px;
+display:inline-block;
+width:100px;
+}
+
+.main-nav a:hover{
+color:#b074d6;
+}
+
+.page-header{
+height:78px;
+width:auto;
+background-color:rgb(255,255,255,0.6);
+}
+
+
+
+.consept{
+background-image:url(images/concept.jpg);
+height:560px;
+background-size:cover;
+color:#fff;
+padding-top: 50px;
+}
+
+h2{
+text-align:center;
+font-family: Gabriola;
+font-size:77px;
+color:#C7C368;
+margin-top:50px;
+height:100px;
+}
+
+
+.box-img{
+display: inline-block;
+}
+
+.box-text p{
+line-height:3.75rem;
+font-family:平成明朝 Std;
+color:#fff;
+}
+
+#menu{
+max-width:900px;
+margin:50px auto 0 auto;
+padding:0 0;
+color:#fff;
+}
+
+.menu-box{
+display:flex;
+margin-bottom:70px;
+}
+
+.tebelog{
+text-align:center;
+line-height:2.625rem;
+}
+
+p{
+font-size:1.125rem;
+color:#B5ABAB;
+text-align:center;
+line-height:2.375rem;
+margin-bottom:50px;
+}
+
+.menu-img{
+display: inline-block;
+}
+
+.menu-text{
+display: inline-block;
+vertical-align:top;
+margin-left:56.5px;
+}
+
+h3{
+font-family: 'Condiment', cursive;
+color:#fff;
+text-shadow: 0px 3px 6px #FFECFC6E;
+text-align:center;
+font-size:2.125rem;
+margin-bottom:33px;
+text-shadow: 0px 3px 6px #FFECFC6E;
+}
+
+.boxs{
+display:flex;
+margin-top:20px;
+}
+
+.tabe-text{
+text-align:center;
+font-size:1.125rem;
+margin-top:65px;
+margin-bottom:60px;
+}
+
+footer{
+background:#2E0B00;
+text-align:center;
+margin:0 0;
+}
+
+footer p{
+color:#fff;
+font-size:0.875rem;
+margin:0 0;
+}
+
+a.link{
+font-size:1.5625rem;
+background:#ddbad0;
+color:#47154D;
+border-radius:20px;
+padding:5px 5px;
+}
+
+a.link:hover{
+color:#C7C368;
+}
+
+a.link:active{
+color: #fff;
+background-color:#ddbad0;
+position: relative;
+top: 2px;
+left: 2px;
+}
+
+li{
+color:#B5ABAB;
+line-height:2.625rem;
+}
+
+
+/*こば担当パート①　ここから*/
+/*SNS　ここから*/
+
+#sns .wrapper h2 {text-transform: uppercase;}
+#sns-container {
+display:flex;
+justify-content: space-around;
+margin-bottom:60px;
+}
+
+.sns-text{
+font-family:NSimSun;
+text-align:center;
+font-size:1.5625rem;
+margin-bottom:30px;
+}
+
+.twitter-timeline{
+width:400px;
+max-height:448px;
+}
+
+
+/*SNS　ここまで*/
+
+
+
+/*アクセス　ここから*/
+
+#access .wrapper h2{
+text-transform:uppercase;
+}
+
+.map {
+margin-bottom: 60px;
+}
+
+.info{
+width:700px;
+margin-right:auto;
+margin-left:auto;
+padding:10px 0 0 0;
+background-color:rgba(255,255,255,0.1);
+color:#000;}
+
+.sub-title{
+font-family: 'Condiment', cursive;
+font-size:2.125rem;
+margin:10px;
+}
+
+span.big{
+font-family: 'Condiment', cursive;
+font-size:1.5em;
+margin:20px;
+}
+
+/*アクセス　ここまで*/
+
+
+/*こば担当パート①　ここまで*/
+
+
+/*こば担当パート②　Menu ここから*/
+table{
+width:486px;
+padding-top:15px;
+}
+
+.mobile {
+display: none;
+}
+
+/*こば担当パート②　Menu ここまで*/
+
+
+@media (max-width: 600px) {
+
+.mobile {
+display: inline;
+}
+
+.wrapper{
+width: auto;
+}
+
+br.pc {
+display: none;
+}
+
+/*header*/
+
+
+
+.logo{
+height: 75px;
+}
+
+.page-header{
+height:100%;
+width:100%;
+
+}
+
+.box-text {
+width: 100%;
+margin: 0 auto;
+}
+
+.box-text p{
+line-height:2rem;
+}
+
+.main-nav{
+width: 280px;
+margin:0;}
+
+.main-nav a{
+display:inline-block;
+width:auto;
+padding:0 5px;
+}
+
+
+
+
+/*menu*/
+
+.boxs {
+flex-direction: column;
+}
+
+.menu-text{
+display: inline-block;
+vertical-align:top;
+margin:0 auto;
+}
+
+table{
+width: auto;
+margin:auto;
+}
+
+.tabe-text{
+width:100%;
+text-align:center;
+margin:30px auto;
+}
+
+/*sns*/
+
+#sns-container {
+flex-direction: column;
+}
+
+.wrapper{
+width:100%;
+text-align:center;
+}
+
+.twitter{
+margin:80px 10px;
+}
+
+.instag{
+margin:0 auto;
+}
+
+
+h2 {
+margin:0 auto;
+width: 300px;
+}
+
+/*access*/
+
+.info{
+width:auto;
+text-align:center;
+}
